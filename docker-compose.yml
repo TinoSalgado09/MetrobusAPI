@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+    app:
+        container_name: app
+        # build can be specified either as a string containing a path to the build context:
+        build:
+            # Either a path to a directory containing a Dockerfile, or a url to a git repository.
+            context: .
+            # Alternate Dockerfile relative route
+            dockerfile: ./compose/local/Dockerfile
+        volumes:
+            - .:/app
+        ports:
+            - "8000:8000"
+        # links defines a network link to containers in another service. 
+        # Either specify both the service name and a link alias (SERVICE:ALIAS), or just the service name.
+        links:
+            - "postgresql_geolocation:postgresql_geolocation"
+        # Expresses startup and shutdown dependencies between services.
+        # In this example postgresql is goin to be created before the app service
+        depends_on:
+            - postgresql_geolocation
+
+    postgresql_geolocation:
+        container_name: postgresql_geolocation
+        image: postgres:14
+        restart: always
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+            - pgdata:/var/lib/postgres/datadb
+
+volumes:
+    pgdata:
