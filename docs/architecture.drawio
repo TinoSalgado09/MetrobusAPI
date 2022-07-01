@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="1">
     <diagram id="863tvQ_oTWcFZVc5Vtm-" name="Page-1">
-        <mxGraphModel dx="1606" dy="480" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1238" dy="533" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -56,7 +56,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="43" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;strokeWidth=1;fillColor=none;dashed=1;" parent="1" vertex="1">
-                    <mxGeometry x="600" y="109" width="690" height="291" as="geometry"/>
+                    <mxGeometry x="600" y="109" width="554" height="291" as="geometry"/>
                 </mxCell>
                 <mxCell id="44" value="Query / Mutation / Subscription" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;dashed=1;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="400" y="230" width="180" height="20" as="geometry"/>
@@ -103,8 +103,8 @@
                 <mxCell id="64" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;strokeWidth=1;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="987" y="230" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" value="Data&lt;br&gt;preprocessing" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=12;" parent="1" vertex="1">
-                    <mxGeometry x="1002" y="247" width="90" height="30" as="geometry"/>
+                <mxCell id="65" value="ETL&lt;br&gt;process" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1021" y="246" width="52" height="32" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" value="" style="sketch=0;html=1;dashed=0;whitespace=wrap;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=api;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="1180" y="210" width="100" height="80" as="geometry"/>
