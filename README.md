@@ -27,6 +27,7 @@ The first step to work on this project was creating an architecure to be impleme
 ![Creation of architecture](/docs/images/architecture.png)
 
 ### Identification of entities related to my solution
+
 Once I decided how to work, I started to identify objects and attributes for the database.
 - Vehicle
 - City
@@ -44,7 +45,7 @@ A location corresponds to a geographical point, but is associated with a city an
 
 
 ### Interpretation of relationship between entities
-Considering the problem statement and the data set, I was able to identify that a vehicle can have one or many locations. Likewise, a location is associated with only one city, but a city can have many locations.
+Considering the problem statement and the data set, I was able to identify that a vehicle can have one or many ubications. Likewise, a ubication is associated with only one city, but a city can have many ubications.
 
 <div align="center" id="container">
   
@@ -59,7 +60,7 @@ Considering the problem statement and the data set, I was able to identify that 
 
 The application is built with this stack:
 - [FastAPI](https://fastapi.tiangolo.com/) 
-- [SqlAlchemy](https://www.sqlalchemy.org/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Strawberry](https://strawberry.rocks/)
 
 
